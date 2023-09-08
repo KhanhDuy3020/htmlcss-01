@@ -7,8 +7,9 @@
     --guides-color: #000339;
 }
 
-html {
+html, body {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -615,6 +616,10 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     white-space: nowrap;
+}
+
+.footer .item a:hover {
+    text-decoration: underline;
 }
 
 .footer .desc {
