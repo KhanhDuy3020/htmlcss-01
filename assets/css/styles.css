@@ -7,7 +7,8 @@
     --guides-color: #000339;
 }
 
-html, body {
+html,
+body {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
@@ -17,7 +18,9 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+
 /* Common */
+
 .content {
     width: 1110px;
     max-width: calc(100% - 20px);
@@ -48,7 +51,7 @@ a {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.arrow-right{
+.arrow-right {
     margin-left: 5px;
 }
 
@@ -63,7 +66,9 @@ a {
     display: flex;
 }
 
+
 /* Header */
+
 .fixed-header {
     padding-top: 26px;
     background-color: #E6F0FF;
@@ -96,11 +101,11 @@ a {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding: 5px 14px;  
+    padding: 5px 14px;
     color: #4F5361;
 }
 
-.navbar ul a:hover{
+.navbar ul a:hover {
     text-decoration: underline;
 }
 
@@ -130,7 +135,9 @@ a {
     border-radius: 8px;
 }
 
+
 /* Hero */
+
 .hero {
     margin-top: 130px;
     max-width: 50%;
@@ -170,7 +177,9 @@ a {
     bottom: 0px;
 }
 
+
 /* Clients */
+
 .clients-logo {
     margin-top: 79px;
     padding: 43px 0px 41px;
@@ -213,7 +222,9 @@ a {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+
 /* Guides */
+
 .guides {
     margin-top: 40px;
     padding: 93px 0 80px;
@@ -243,6 +254,7 @@ a {
 
 .guides .desc {
     margin: 20px auto;
+    text-align: center;
     width: 459px;
     max-width: 100%;
     color: #5A6473;
@@ -255,7 +267,6 @@ a {
     display: flex;
     margin-top: 70px;
     justify-content: center;
-    
 }
 
 .guide-item {
@@ -268,10 +279,11 @@ a {
     color: #3B3C45;
     font-size: 2rem;
     font-weight: 500;
-    line-height: 1.1; /* 110% */
+    line-height: 1.1;
+    /* 110% */
 }
 
-.guide-item .link{
+.guide-item .link {
     color: #0689FF;
     font-size: 1.4rem;
     font-weight: 600;
@@ -287,7 +299,9 @@ a {
     min-width: 170px;
 }
 
+
 /* Featured */
+
 .featured {
     margin-top: 40px;
     background: #F5FAFE;
@@ -326,13 +340,16 @@ a {
 
 .featured .list {
     margin-top: 70px;
-    display: flex;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
 .featured .item {
+    margin: 0 auto;
     flex: 1;
-    width: 350px;
     object-fit: cover;
     background-color: #FFF;
     border-radius: 12px;
@@ -389,7 +406,9 @@ a {
     letter-spacing: 0.014rem;
 }
 
+
 /* Stats */
+
 .stats {
     margin-top: 75px;
     padding: 50px;
@@ -399,7 +418,8 @@ a {
     width: 1048px;
 }
 
-.stats .img-block, .stats .info {
+.stats .img-block,
+.stats .info {
     width: 50%;
 }
 
@@ -413,7 +433,7 @@ a {
     left: 0;
     top: 0;
     width: 240px;
-    border-radius: 0px 0px 12px 12px;
+    border-radius: 12px 0px 12px 12px;
     background: #FFF;
 }
 
@@ -466,7 +486,6 @@ a {
 
 .stats-trend .avatar:first-child {
     margin-left: 0;
-
 }
 
 .stats-trend .avatar-group {
@@ -481,6 +500,7 @@ a {
     object-fit: cover;
     border-radius: 12px;
     flex-shrink: 0;
+    box-shadow: -1px 0px 27px 15px rgba(0, 0, 0, 0.13);
 }
 
 .stats .info {
@@ -517,9 +537,8 @@ a {
 
 .stats .row-qty {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin: 110px 0 50px;
-    gap: 220px;
 }
 
 .stats .qty {
@@ -537,7 +556,9 @@ a {
     font-weight: 500;
 }
 
+
 /* Subscription */
+
 .subscription {
     margin-top: 50px;
 }
@@ -546,7 +567,6 @@ a {
     display: flex;
     position: relative;
     align-items: center;
-    height: 370px;
     border-radius: 20px;
     background: #063183;
 }
@@ -578,25 +598,27 @@ a {
     color: #002366;
 }
 
-.subscription .image{
+.subscription .image {
     position: absolute;
     bottom: 0;
-    right: 221px;
+    left: 700px;
 }
 
 
 /* Footer */
+
 .footer {
     margin-top: 55px;
     padding: 50px 165px 60px;
 }
 
 .footer .row {
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.5fr;
 }
 
 .footer .row:first-child {
-    gap: 185px;
+    gap: 40px;
 }
 
 .footer .heading {
@@ -611,7 +633,8 @@ a {
     margin-top: 18px;
 }
 
-.footer .item a, .footer .desc {
+.footer .item a,
+.footer .desc {
     color: #7A7A7E;
     font-size: 1.6rem;
     font-weight: 400;
@@ -623,7 +646,7 @@ a {
 }
 
 .footer .desc {
-    line-height: 175%;  
+    line-height: 175%;
     white-space: normal;
 }
 

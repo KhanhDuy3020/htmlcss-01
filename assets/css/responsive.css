@@ -13,6 +13,9 @@
 /* Tablet & mobile */
 
 @media screen and (max-width: 991px) {
+    .action {
+        display: none;
+    }
     .navbar {
         position: relative;
     }
@@ -67,6 +70,64 @@
     .separate {
         border-top: 1.5px solid #ebebeb;
     }
+    .hero {
+        max-width: 100%;
+    }
+    .hero .desc {
+        margin: 30px 0px 30px;
+    }
+    .hero-img {
+        display: none;
+    }
+    .hero-wrap .info {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .clients-logo .images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .guide-item {
+        flex: 1;
+        margin: 0;
+    }
+    .featured .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .stats .row {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .stats .info {
+        padding: 0;
+    }
+    .stats .img-block {
+        width: 40%;
+    }
+    .stats .img-block .image {
+        width: 100%;
+    }
+    .stats .row-qty {
+        gap: 0;
+        justify-content: space-between;
+    }
+    .stats .qty {
+        font-size: 5rem;
+    }
+    .subscription .info {
+        width: 100%;
+        margin: 80px 60px;
+    }
+    .subscription .image {
+        display: none;
+    }
+    .footer {
+        padding: 50px 30px 60px;
+    }
+    .footer .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
@@ -82,11 +143,49 @@
 /* Mobile */
 
 @media screen and (max-width: 767px) {
+    .hero {
+        margin-top: 50px;
+    }
+    .hero .title {
+        font-size: 5rem;
+    }
     .menu-drawer {
         inset: 0 25% 0 0;
         padding: 40px;
     }
     .navbar .action {
         display: none;
+    }
+    .list-guides {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .stats .row {
+        flex-direction: column;
+    }
+    .featured .list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .stats .img-block {
+        width: 100%;
+    }
+    .stats .img-block .image {
+        width: 100%;
+    }
+    .stats .info {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .stats .info .desc {
+        width: 80%;
+    }
+    .stats .row-qty {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    .subscription .info {
+        margin: 40px;
     }
 }
